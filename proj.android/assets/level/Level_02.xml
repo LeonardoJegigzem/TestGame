@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level-config transition-to="Level_01"> <!-- transition-to indica a que nivel se debe hacer la transicion una vez finalizado -->
+	<background tmx="Level_02" metalayer="Meta" foregroundlayer="Foreground"/>
+	<elements>
+		<player loaded="true" status="FLLRS">
+			<position x="100" y="3000" />
+		</player>
+	</elements>
+</level-config>

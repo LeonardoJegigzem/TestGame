@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="150" height="150" tilewidth="32" tileheight="32" backgroundcolor="#000000">
+ <tileset firstgid="1" name="tileset_1" tilewidth="32" tileheight="32">
+  <image source="tileset_1.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="meta._tile" tilewidth="32" tileheight="32">
+  <image source="meta._tile.png" width="96" height="96"/>
+  <tile id="0">
+   <properties>
+    <property name="Down" value="true"/>
+    <property name="Left" value="true"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1" terrain="0,0,0,0">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="true"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3" terrain=",,,0">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="true"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="false"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="true"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="false"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Down" value="true"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="true"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="true"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Down" value="true"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="false"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="true"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Foreground" width="150" height="150">
+  <data encoding="base64" compression="zlib">
+   eJzt3EGKg0AUQEE33v/Ksx+io8bX2kMVuAkS/+LRrUKyLAAAAAAAAAAAAAAAAAAAAHyyPj0A/5KuKOiKgq4o6IqCrijoioKuKKyLtrifpijoioKuKOiKgq4o6IqCrijoioKuKOiKgq4o6IqCrijoioKuKOiKgq4o6IqCriisGwfcTVcUdEVBV3zL/RV3+N2Ohua0tR68ZX3Q1Zye7OrI9+tqTtYrCke7+ub4dL0z8zGfkU0tO5/vzcd8RnV1dV/V1ZysVxR0RaHuams/PDMf87FeUdAVhSMtFNc7cz7zeaqrvWuOnIfG6K7Oets8HDP6efDKfMxHVxRGdXW2ubfvz7zbXldwla4o6IqCrijoioKuKOiKgq4o/PVeFK7Ya0dXXKUrCrqi4P6KgudBCrqioCsKuqKgKwq6oqArCrqioCsK3rdT8BtCKkeb0RVn6IpK/T8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo/wA9eoJuw==
+  </data>
+ </layer>
+ <layer name="Meta" width="150" height="150">
+  <data encoding="base64" compression="zlib">
+   eJzt3VFugkAYhVG2hrXQ/a+okrQJncwYYHJDxXOSeTHG8PDlRxnUYQAAAAAAAAAAAAAAAAAAAKDmfvYBcEm6IkFXJOiKBF2RoCsSdEWCrkjQFQm6IkFXJOiKBF2RoCsSdEWCrkjQFQm6IkFXJOiKBF2RoCsSdEWCrkjQFQm6IkFXJOiKhPGxvoo1nnpEXJUZRoKuSNAVvebH+ijWfOoR8YrW/SzMptdUzoLaup12dLq6ss/Q65azqUZX15XqagtdXddyHtxyvqytqXitedh3XtUVpdqcuzceb9EVpXU/48/SFb3MKxJ0RcLSzzT8fe+uK3qZV/wq73XqWeU1hoWu3lP6Gqiu3lO6q+Vaw1RZ5XPW1yV4fWfu2dTo6hqO7tek7ofQFS09M1BXtByZZev7RGGv1iwzp+ihKxJ0RYKuSNAVCboiQVck6IqEVlf2nOnxbI9HVxylKxJ0RUKrq2XfWVcc5fMgCboiQVck6IoEXZGgKxJ0RYKuSNAVCc/uZ/D/Shx1G9rfISz/y0tn7PGsrTXnRvba8l17XbHX1t8QAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+O++AVnyRQA=
+  </data>
+ </layer>
+</map>

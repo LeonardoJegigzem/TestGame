@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level-config transition-to="Level_02">
+	<!-- ESTE ARCHIVO SOLO DEFINE LAS ANIMACIONES DE CADA ELEMENTO, NO SU COMPORTAMIENTO -->
+	<!-- transition-to indica a que nivel se debe hacer la transicion una vez finalizado -->
+	<background tmx="Level_01" metalayer="Meta" foregroundlayer="Foreground"/>
+	<elements>
+		<player type="playable-character" status="FLLRS" use-animation="player" use-weapon="COMMON_SWORD"> 
+			<!-- type: Indica el tipo de player en uso.
+				 status: Indica el estado inicial en el que inicia el player.
+				 animation: Indica cual es la animacion en uso para el player(Puede haber multiples definiciones).
+			-->
+			<position x="CENTER" y="200"/>
+
+			<!-- Hacer que cargue el nombre del archivo con una property nueva en el tag animations-->
+			<animations id="player" atlasName="player-movements">
+				<!-- El id se mapea con un archivo con ese nombre dentro de la carpeta animations (VER ESTO!)-->
+				<!-- El pattern mapea con el patron que matchea con cada elemento de la animacion -->
+				<!-- El status mapea con el nombre del estado al cual corresponde que se ejecute esa animacion -->
+				<animation status="WLS" pattern="WALKL_%d.png" frames="17" speed="0.1f"/>
+				<animation status="WRS" pattern="WALKR_%d.png" frames="17" speed="0.1f"/>
+				<animation status="SLS" pattern="STANDL_%d.png" frames="4" />
+				<animation status="SRS" pattern="STANDR_%d.png" frames="4" />
+				<animation status="JMPLS" pattern="JUMPL_%d.png" frames="2" />
+				<animation status="JMPRS" pattern="JUMPR_%d.png" frames="2" />
+				<animation status="FLLLS" pattern="FALLL_%d.png" frames="2" />
+				<animation status="FLLRS" pattern="FALLR_%d.png" frames="2" />
+				<animation status="SWATTLS" pattern="SWORDL_%d.png" frames="7" speed="0.1f" type="once-sequenced" /> 
+				<!-- Hacer que permita mas de un pattern, porque puede que haya mas de un arma diferente(y por eso mas una animacion) asociado a un mismo status -->
+				<animation status="SWATTRS" pattern="SWORDR_%d.png" frames="7" speed="0.1f" type="once-sequenced" />
+			</animations>
+
+			<!-- Se va a crear un contenedor por tipo de arma, al tener un animationhandler propio por tipo de arma, también tenemos un sprite propio para manejar
+				 todas las animaciones que queramos correr sobre el player  -->
+			<weapon category="SWORD"> <!-- De momento el category y el id tienen que ser iguales! -->
+				<animations id="SWORD" atlasName="sword-animations"> 
+					<!-- Cada tipo de sword va a tener un ID, que se va a concatenar con para identificar que animacion le corresponde _SWORDL o _SWORDR -->
+					<animation status="COMMON_SWORDL" pattern="COMMONSWORDL_%d.png" frames="4" type="once" />
+					<animation status="COMMON_SWORDR" pattern="COMMONSWORDR_%d.png" frames="4" type="once" />
+					<!--
+					<animation status="FIRE_SWORDL" pattern="FIRESWORDL_%d.png" frames="4" type="once" />
+					<animation status="FIRE_SWORDR" pattern="FIRESWORDR_%d.png" frames="4" type="once" />
+					-->
+				</animations>
+			</weapon>
+		</player>
+	</elements>
+</level-config>

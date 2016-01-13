@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="25" tilewidth="32" tileheight="32" backgroundcolor="#000000" nextobjectid="1">
+ <tileset firstgid="1" name="tileset_1" tilewidth="32" tileheight="32">
+  <image source="tileset_1.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="meta._tile" tilewidth="32" tileheight="32">
+  <image source="meta._tile.png" width="96" height="96"/>
+  <tile id="0">
+   <properties>
+    <property name="Down" value="true"/>
+    <property name="Left" value="true"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1" terrain="0,0,0,0">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="true"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3" terrain=",,,0">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="true"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="false"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="true"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="false"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Down" value="true"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="true"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="true"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Down" value="true"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="false"/>
+    <property name="Up" value="false"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="Down" value="false"/>
+    <property name="Left" value="false"/>
+    <property name="Right" value="false"/>
+    <property name="Transition" value="true"/>
+    <property name="Up" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Foreground" width="50" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztlEEOQDAQRUdCLBBWbNyF+58KUTGpdqiUmpqXvJU0/T+dASAIgvBvOiVXOGdf4J4/VmJ8lxg7caGF/V87BM4iHHHZjXE2sZgpQ7LN2tmcVbDnNVk8mNE3KayZe/h+DzwvOlsPk/VbAS+Cs+k0QM9WSGy7S+0zZa2dKZEud7lqmnWf4h6m70/ff+bV+5f8OdHja73uvgcXcY8JFYIHew==
+  </data>
+ </layer>
+ <layer name="Meta" width="50" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt02EKgCAMBeBdLS2k+18ohAQxG6aWvrUP9iupN14SKaXUv9lzUCFn99DzSyWxF4k7obDJqLncdZLra6Frn/GYlzKWevKfrcyzrU+cTyDtwfWDtAdn5j0c8fc3Hse8x2TOp3e/9Ds1w2VrNbqjXsIe+9AU7aT1ERyD9xXb
+  </data>
+ </layer>
+</map>
